@@ -35,15 +35,16 @@ function App() {
           // user in with confirmationResult.confirm(code).
           window.confirmationResult = confirmationResult;
           // ...
-          console.log("opt sent");
+          alert("opt sent");
         })
         .catch((error) => {
           // Error; SMS not sent
           // ...
           console.log(error);
+          alert("opt not sent");
         });
     } else {
-      alert("number length must be 10");
+      alert("input 10 digit");
     }
   };
 
@@ -97,9 +98,6 @@ function App() {
                   value={OTP}
                   onChange={verifyOTP}
                 />
-                <Button variant="contained" type="submit">
-                  register
-                </Button>
               </div>
             </>
           ) : null}
