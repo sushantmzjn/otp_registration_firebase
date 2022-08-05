@@ -1,5 +1,19 @@
-.App {
-  text-align: center;
+.parent {
+  height: max-content;
+  background: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  background-color: #18c5e4;
+  width: 300px;
+  height: max-content;
+  padding: 10px;
+  align-items: center;
+  border-radius: 4px;
+  margin: 20px;
 }
 
 .App-logo {
